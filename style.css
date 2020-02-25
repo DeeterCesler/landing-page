@@ -1,15 +1,20 @@
-body{
-    margin: 0;
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .wrapper{
     /* background-color: #61dafb; */
-    /* margin: -20%; */
+    margin: 0;
+    width: 100%;
     background: url("./img/mountain.jpg");
     background-size: cover;
     height: 100%;
     text-align: center;
-    padding: 5%;
+    padding-top: 5%;
     padding-bottom: 10%;
 }
   
@@ -71,6 +76,12 @@ p{
     .wrapper{
         height: 100%;
     }
+
+    .padding-boi{
+        padding: 0 0 0 35%;
+        width: 80%;
+        text-align: left;
+    }
 }
 
 .mailchimp{
@@ -79,4 +90,10 @@ p{
 
 #mc-embedded-subscribe, #mce-EMAIL{
     display: inline-block;
+}
+
+.white-background{
+    background-color: white;
+    width: 100%;
+    padding: 5% 0 5% 0;
 }

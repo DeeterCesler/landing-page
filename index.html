@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110417068-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110417068-3');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -116,9 +125,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
-        let onlyOnce = true;
+        console.log("UH: ", localStorage.getItem("onlyOnce"));
         $(window).scroll(function() {
-            if ($(window).scrollTop() + $(window).height() >= 1000 && onlyOnce) {
+            if ($(window).scrollTop() + $(window).height() >= 1000 && (localStorage.getItem("onlyOnce") === undefined)) {
                 $('.floater').addClass('show');
                 $('.cover').addClass('show');
             }
@@ -127,8 +136,9 @@
         function hider(){
             $('.floater').removeClass('show');
             $('.cover').removeClass('show');
-            onlyOnce = false;
+            localStorage.setItem("onlyOnce", true);
         }
+
     </script>
 </body>
 </html>

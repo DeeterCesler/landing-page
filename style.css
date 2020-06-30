@@ -23,19 +23,24 @@ html,body
 }
 
 .first {
-    background: url("./img/mountain.jpg");
+    background: #5BC0EB;
 }
   
-.inner{
+.inner, .inner-two {
     margin: 0 10% 0 10%;
     background-color: rgba(0,0,0,0.8);
     padding: 5%;
     border-radius: 15px;
     color: white;
-  }
+}
+
+.inner-two {
+    background-color: rgba(255,255,255,1);
+    color: #000;
+}
 
 .spacer{
-    height: 5%;
+    height: 100px;
 }
 
 h1{
@@ -113,6 +118,10 @@ p strong {
 
     .cta {
         margin: 5px;
+    }
+
+    .thin-tall-line {
+        display: none;
     }
 }
 
@@ -211,7 +220,7 @@ p strong {
 .placeholder {
     margin: 0;
     height: 100px;
-    background-color: rgba(150, 200, 265, 0.5);
+    background-color: #FDE74C;
 }
 
 .floater {
@@ -222,7 +231,7 @@ p strong {
     opacity: 0;
     transition: all linear;
     display: none;
-    background-color: rgb(51, 190, 111);
+    background-color: #E55934;
     color: white;
     font-size: 2em;
     text-align: center;
@@ -369,4 +378,49 @@ p strong {
 
 .top-right {
     margin-right: 50px;
+}
+
+.value-prop h4 {
+    margin: 20px 5px;
+}
+
+.value-prop {
+    margin: 10px;
+}
+
+.thin-tall-line {
+    height: 250px;
+    background-color: #0f0f0f;
+    width: 2px;
+}
+
+.punchy {
+    font-weight: 350;
+}
+
+.punchy-bold {
+    font-weight: 750;
+    font-size: 2em;
+}
+
+.separator, .separator-2, .separator-3 {
+    height: 15px;
+    width: 100%;
+}
+
+.separator {
+    background-color: #F24333;
+}
+
+.separator-2 {
+    background-color: #5BC0EB;
+}
+
+.separator-3 {
+    background-color: #F24333;
+}
+
+.image {
+    background: url('./img/coffee.jpg');
+    background-size: cover;
 }

@@ -123,6 +123,10 @@ p strong {
     .thin-tall-line {
         display: none;
     }
+
+    .inner-two {
+        margin: 2%;
+    }
 }
 
 
@@ -180,6 +184,10 @@ p strong {
     .indirect-top {
         margin-top: 35px !important;
     }
+
+    .steps {
+        padding-top: 50px;
+     }
 }
 
 .mailchimp{
@@ -384,7 +392,7 @@ p strong {
     margin: 20px 5px;
 }
 
-.value-prop {
+.value-prop, .steps {
     margin: 10px;
 }
 
@@ -423,4 +431,26 @@ p strong {
 .image {
     background: url('./img/coffee.jpg');
     background-size: cover;
+}
+
+.steps h4 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.step-container {
+    padding-bottom: 20px;
+}
+
+.half-spacer {
+    height: 50px;   
+}
+
+.quarter-spacer {
+    height: 25px;   
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: 800;
 }

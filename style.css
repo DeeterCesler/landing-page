@@ -187,7 +187,12 @@ p strong {
     }
 
     .indirect-top {
-        margin-top: 35px !important;
+        margin-top: 30px !important;
+        background-color: rgba(0,0,0,0.1);
+        padding: 10px;
+        border-radius: 3px;
+        font-size: 0.9em;
+        font-weight: 300;
     }
 
     .steps {
@@ -197,7 +202,11 @@ p strong {
      .explanatory {
         text-align: justify;
         line-height: 2;
-    }    
+    }
+
+    .pricing p {
+        margin: 5px;
+    }
 }
 
 .mailchimp{
@@ -396,6 +405,7 @@ p strong {
 
 .top-right {
     margin-right: 50px;
+    font-size: 1em;
 }
 
 .value-prop h4 {
@@ -407,7 +417,7 @@ p strong {
 }
 
 .thin-tall-line {
-    height: 250px;
+    height: 300px;
     background-color: #0f0f0f;
     width: 2px;
 }

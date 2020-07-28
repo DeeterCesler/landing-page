@@ -71,13 +71,14 @@ p strong {
     color: white;
     font-weight: 900;
     font-size: 1.2em;
+    background-color: #f68528;
 }
 
 .main {
     background-color: #f68528;
 }
 
-.main:hover {
+.main:hover, #mc-embedded-subscribe:hover {
     background-color: #f48f3d;
 }
 
@@ -139,7 +140,7 @@ p strong {
 
 @media only screen and (min-width: 1000px) {
     .email{
-        width: 50%;
+        min-width: 50%;
         font-size: 1.3em;
       }
 
@@ -210,7 +211,9 @@ p strong {
 }
 
 .mailchimp{
-    color: #111111
+    color: #111111;
+    display: table;
+    margin: 0 auto;
 }
 
 #mc-embedded-subscribe, #mce-EMAIL{
